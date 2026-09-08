@@ -202,3 +202,56 @@ span.highlight {
 a {
   color: rgba(48, 16, 145, 0.905);
 }
+
+.review-table {
+  border-collapse: collapse;
+  width: auto;
+  min-width: 260px;
+}
+
+.review-table td {
+  font-family: 'Nunito', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 6px 24px 6px 0;
+  border-bottom: 1px solid rgb(228, 224, 214);
+  text-align: left;
+}
+
+.review-table tr:last-child td {
+  border-bottom: none;
+}
+
+.review-table td:first-child {
+  font-weight: 700;
+  color: rgb(60, 57, 52);
+  white-space: nowrap;
+}
+
+.review-table td:last-child {
+  color: rgb(120, 120, 120);
+}
+
+.review-banner {
+  font-family: 'Nunito', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(90, 87, 82);
+  margin: 0 0 10px 0;
+  line-height: 1.5;
+}
+
+.review-details summary {
+  font-family: 'Nunito', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(48, 16, 145, 0.905);
+  cursor: pointer;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.review-details summary:hover {
+  color: #f09228;
+}
+
+.review-details[open] summary {
+  margin-bottom: 12px;
+}
