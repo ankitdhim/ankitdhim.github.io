@@ -76,9 +76,15 @@
               </p>
             </td>
             <td style="padding-top:3%;padding-bottom:3%;padding-left:3%;width:40%;max-width:40%;">
-              <div class="profile-container">
-                <img class="profile-photo" src="images/cover_photo_3d_pixar.png"> 
+              <div class="profile-container" id="profile_container" role="button" tabindex="0" title="Click to switch photo" onclick="toggleProfile()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProfile();}">
+                <img class="profile-photo" id="profile_real" src="images/cover_photo.jpg" alt="Ankit Dhiman">
+                <img class="profile-photo profile-alt" id="profile_toon" src="images/cover_photo_pixar.jpg" alt="Ankit Dhiman, animated">
               </div>
+              <script>
+                function toggleProfile() {
+                  document.getElementById('profile_container').classList.toggle('toon');
+                }
+              </script>
             </td>
           </tr>
         </tbody></table>
